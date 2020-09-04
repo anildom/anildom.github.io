@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <title></title>
+  <!-- place keywords here -->
+  <link rel="canonical" href="https://anildom.github.io/" />
+
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Anıl Dom" />
+  <meta property="og:url" content="https://anildom.github.io/" >
+  <meta property="twitter:site" content="@anil_dom" > <!-- username with @ before it -->
+
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    <!-- .no-js and .js are for preventing FOUC -->
+    .no-js {
+      opacity: 0 !important;
+      visibility: hidden !important;
+    }
+    .js {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+    /* Includes obsolete and deprecated elements for older coding, at the end from acronym to xmp */
+    html, body, address, article, aside, footer, header, h1, h2, h3, h4, h5, h6, hgroup, main, nav, section,
+    blockquote, dd, div, dl, dt, figcaption, figure, hr, li, main, ol, p, pre, ul,
+    a, abbr, b, bdi, bdo, br, cite, code, data, dfn, em, i, kbd, mark, q, rb, rp, rtc, ruby, s, samp, small, span, strong, sub, time, u, var, wbr,
+    area, audio, img, map, track, video,
+    embed, iframe, object, param, picture, source,
+    canvas, noscript,
+    del, ins,
+    caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr,
+    button, datalist, fieldset, form, input, label, legend, meter, optgroup, option, output, progress, select, textarea,
+    details, dialog, menu, summary,
+    slot, template,
+    acronym, applet, basefont, bgsound, big, blink, center, command, content, dir, element, font, frame, frameset, image,
+    isindex, keygen, listing, marquee, menuitem, multicol, nextid, nobr, noembed,
+    noframes, plaintext, shadow, spacer, strike, tt, xmp {
+      border: 0;
+      box-sizing: border-box;
+      font: inherit;
+      font-size: 100%;
+    	margin: 0;
+    	padding: 0;
+    	vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, footer, header, main, mark, nav, section, summary, time {
+    	display: block;
+    }
+    body {
+    	line-height: 1;
+    }
+    ol, ul {
+    	list-style: none;
+    }
+    blockquote, q {
+    	quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    	content: '';
+    	content: none;
+    }
+    table {
+    	border-collapse: collapse;
+    	border-spacing: 0;
+    }
+
+    /*! sanitize.css v10.0.0 | CC0-1.0 License | github.com/csstools/sanitize.css */
+
+    /* Document
+     * ========================================================================== */
+
+    /**
+     * 1. Add text decoration inheritance in all browsers (opinionated).
+     * 2. Add vertical alignment inheritance in all browsers (opinionated).
+     */
+
+    ::before,
+    ::after {
+      box-sizing: border-box;
+      text-decoration: inherit; /* 1 */
+      vertical-align: inherit; /* 2 */
+    }
+
+    /**
+     * 1. Use the default cursor in all browsers (opinionated).
+     * 2. Change the line height in all browsers (opinionated).
+     * 3. Use a 4-space tab width in all browsers (opinionated).
+     * 4. Remove the grey highlight on links in iOS (opinionated).
+     * 5. Prevent adjustments of font size after orientation changes in
+     *    IE on Windows Phone and in iOS.
+     * 6. Breaks words to prevent overflow in all browsers (opinionated).
+     */
+
+    html {
+      cursor: default; /* 1 */
+      line-height: 1.5; /* 2 */
+      -moz-tab-size: 4; /* 3 */
+      tab-size: 4; /* 3 */
+      -webkit-tap-highlight-color: transparent /* 4 */;
+      -ms-text-size-adjust: 100%; /* 5 */
+      -webkit-text-size-adjust: 100%; /* 5 */
+      word-break: break-word; /* 6 */
+    }
+
+    /* Sections
+     * ========================================================================== */
+
+    /**
+     * Remove the margin in all browsers (opinionated).
+     */
+
+    body {
+      margin: 0;
+    }
+
+    /**
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Edge, Firefox, and Safari.
+     */
+
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+
+    /* Grouping content
+     * ========================================================================== */
+
+    /**
+     * Remove the margin on nested lists in Chrome, Edge, IE, and Safari.
+     */
+
+    dl dl,
+    dl ol,
+    dl ul,
+    ol dl,
+    ul dl {
+      margin: 0;
+    }
+
+    /**
+     * Remove the margin on nested lists in Edge 18- and IE.
+     */
+
+    ol ol,
+    ol ul,
+    ul ol,
+    ul ul {
+      margin: 0;
+    }
+
+    /**
+     * 1. Add the correct sizing in Firefox.
+     * 2. Show the overflow in Edge 18- and IE.
+     */
+
+    hr {
+      height: 0; /* 1 */
+      overflow: visible; /* 2 */
+    }
+
+    /**
+     * Add the correct display in IE.
+     */
+
+    main {
+      display: block;
+    }
+
+    /**
+     * Remove the list style on navigation lists in all browsers (opinionated).
+     */
+
+    nav ol,
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    /**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+
+    pre {
+      font-family: monospace, monospace; /* 1 */
+      font-size: 1em; /* 2 */
+    }
+
+    /* Text-level semantics
+     * ========================================================================== */
+
+    /**
+     * Remove the gray background on active links in IE 10.
+     */
+
+    a {
+      background-color: transparent;
+    }
+
+    /**
+     * Add the correct text decoration in Edge 18-, IE, and Safari.
+     */
+
+    abbr[title] {
+      text-decoration: underline;
+      text-decoration: underline dotted;
+    }
+
+    /**
+     * Add the correct font weight in Chrome, Edge, and Safari.
+     */
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+    /**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+
+    code,
+    kbd,
+    samp {
+      font-family: monospace, monospace; /* 1 */
+      font-size: 1em; /* 2 */
+    }
+
+    /**
+     * Add the correct font size in all browsers.
+     */
+
+    small {
+      font-size: 80%;
+    }
+
+    /* Embedded content
+     * ========================================================================== */
+
+    /*
+     * Change the alignment on media elements in all browsers (opinionated).
+     */
+
+    audio,
+    canvas,
+    iframe,
+    img,
+    svg,
+    video {
+      vertical-align: middle;
+    }
+
+    /**
+     * Add the correct display in IE 9-.
+     */
+
+    audio,
+    video {
+      display: inline-block;
+    }
+
+    /**
+     * Add the correct display in iOS 4-7.
+     */
+
+    audio:not([controls]) {
+      display: none;
+      height: 0;
+    }
+
+    /**
+     * Remove the border on iframes in all browsers (opinionated).
+     */
+
+    iframe {
+      border-style: none;
+    }
+
+    /**
+     * Remove the border on images within links in IE 10-.
+     */
+
+    img {
+      border-style: none;
+    }
+
+    /**
+     * Change the fill color to match the text color in all browsers (opinionated).
+     */
+
+    svg:not([fill]) {
+      fill: currentColor;
+    }
+
+    /**
+     * Hide the overflow in IE.
+     */
+
+    svg:not(:root) {
+      overflow: hidden;
+    }
+
+    /* Tabular data
+     * ========================================================================== */
+
+    /**
+     * Collapse border spacing in all browsers (opinionated).
+     */
+
+    table {
+      border-collapse: collapse;
+    }
+
+    /**
+     * Restrict sizing to the page width in all browsers (opinionated).
+     */
+
+    iframe,
+    img,
+    input,
+    select,
+    textarea {
+      height: auto;
+      max-width: 100%;
+    }
+
+    /* Forms
+     * ========================================================================== */
+
+    /**
+     * Remove the margin on controls in Safari.
+     */
+
+    button,
+    input,
+    select {
+      margin: 0;
+    }
+
+    /**
+     * 1. Show the overflow in IE.
+     * 2. Remove the inheritance of text transform in Edge 18-, Firefox, and IE.
+     */
+
+    button {
+      overflow: visible; /* 1 */
+      text-transform: none; /* 2 */
+    }
+
+    /**
+     * Correct the inability to style buttons in iOS and Safari.
+     */
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    /**
+     * 1. Change the inconsistent appearance in all browsers (opinionated).
+     * 2. Correct the padding in Firefox.
+     */
+
+    fieldset {
+      border: 1px solid #a0a0a0; /* 1 */
+      padding: 0.35em 0.75em 0.625em; /* 2 */
+    }
+
+    /**
+     * Show the overflow in Edge 18- and IE.
+     */
+
+    input {
+      overflow: visible;
+    }
+
+    /**
+     * 1. Correct the text wrapping in Edge 18- and IE.
+     * 2. Correct the color inheritance from `fieldset` elements in IE.
+     */
+
+    legend {
+      color: inherit; /* 2 */
+      display: table; /* 1 */
+      max-width: 100%; /* 1 */
+      white-space: normal; /* 1 */
+    }
+
+    /**
+     * 1. Add the correct display in Edge 18- and IE.
+     * 2. Add the correct vertical alignment in Chrome, Edge, and Firefox.
+     */
+
+    progress {
+      display: inline-block; /* 1 */
+      vertical-align: baseline; /* 2 */
+    }
+
+    /**
+     * Remove the inheritance of text transform in Firefox.
+     */
+
+    select {
+      text-transform: none;
+    }
+
+    /**
+     * 1. Remove the margin in Firefox and Safari.
+     * 2. Remove the default vertical scrollbar in IE.
+     * 3. Change the resize direction in all browsers (opinionated).
+     */
+
+    textarea {
+      margin: 0; /* 1 */
+      overflow: auto; /* 2 */
+      resize: vertical; /* 3 */
+    }
+
+    /**
+     * Remove the padding in IE 10-.
+     */
+
+    [type="checkbox"],
+    [type="radio"] {
+      padding: 0;
+    }
+
+    /**
+     * 1. Correct the odd appearance in Chrome, Edge, and Safari.
+     * 2. Correct the outline style in Safari.
+     */
+
+    [type="search"] {
+      -webkit-appearance: textfield; /* 1 */
+      outline-offset: -2px; /* 2 */
+    }
+
+    /**
+     * Correct the cursor style of increment and decrement buttons in Safari.
+     */
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+    /**
+     * Correct the text style of placeholders in Chrome, Edge, and Safari.
+     */
+
+    ::-webkit-input-placeholder {
+      color: inherit;
+      opacity: 0.54;
+    }
+
+    /**
+     * Remove the inner padding in Chrome, Edge, and Safari on macOS.
+     */
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+    /**
+     * 1. Correct the inability to style upload buttons in iOS and Safari.
+     * 2. Change font properties to `inherit` in Safari.
+     */
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button; /* 1 */
+      font: inherit; /* 2 */
+    }
+
+    /**
+     * Remove the inner border and padding of focus outlines in Firefox.
+     */
+
+    ::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    /**
+     * Restore the focus outline styles unset by the previous rule in Firefox.
+     */
+
+    :-moz-focusring {
+      outline: 1px dotted ButtonText;
+    }
+
+    /**
+     * Remove the additional :invalid styles in Firefox.
+     */
+
+    :-moz-ui-invalid {
+      box-shadow: none;
+    }
+
+    /* Interactive
+     * ========================================================================== */
+
+    /*
+     * Add the correct display in Edge 18- and IE.
+     */
+
+    details {
+      display: block;
+    }
+
+    /*
+     * Add the correct styles in Edge 18-, IE, and Safari.
+     */
+
+    dialog {
+      background-color: white;
+      border: solid;
+      color: black;
+      display: block;
+      height: -moz-fit-content;
+      height: -webkit-fit-content;
+      height: fit-content;
+      left: 0;
+      margin: auto;
+      padding: 1em;
+      position: absolute;
+      right: 0;
+      width: -moz-fit-content;
+      width: -webkit-fit-content;
+      width: fit-content;
+    }
+
+    dialog:not([open]) {
+      display: none;
+    }
+
+    /*
+     * Add the correct display in all browsers.
+     */
+
+    summary {
+      display: list-item;
+    }
+
+    /* Scripting
+     * ========================================================================== */
+
+    /**
+     * Add the correct display in IE 9-.
+     */
+
+    canvas {
+      display: inline-block;
+    }
+
+    /**
+     * Add the correct display in IE.
+     */
+
+    template {
+      display: none;
+    }
+
+    /* User interaction
+     * ========================================================================== */
+
+    /*
+     * 1. Remove the tapping delay in IE 10.
+     * 2. Remove the tapping delay on clickable elements
+          in all browsers (opinionated).
+     */
+
+    a,
+    area,
+    button,
+    input,
+    label,
+    select,
+    summary,
+    textarea,
+    [tabindex] {
+      -ms-touch-action: manipulation; /* 1 */
+      touch-action: manipulation; /* 2 */
+    }
+
+    /**
+     * Add the correct display in IE 10-.
+     */
+
+    [hidden] {
+      display: none;
+    }
+
+    /* Accessibility
+     * ========================================================================== */
+
+    /**
+     * Change the cursor on busy elements in all browsers (opinionated).
+     */
+
+    [aria-busy="true"] {
+      cursor: progress;
+    }
+
+    /*
+     * Change the cursor on control elements in all browsers (opinionated).
+     */
+
+    [aria-controls] {
+      cursor: pointer;
+    }
+
+    /*
+     * Change the cursor on disabled, not-editable, or otherwise
+     * inoperable elements in all browsers (opinionated).
+     */
+
+    [aria-disabled="true"],
+    [disabled] {
+      cursor: not-allowed;
+    }
+
+    /*
+     * Change the display on visually hidden accessible elements
+     * in all browsers (opinionated).
+     */
+
+    [aria-hidden="false"][hidden] {
+      display: initial;
+    }
+
+    [aria-hidden="false"][hidden]:not(:focus) {
+      clip: rect(0, 0, 0, 0);
+      position: absolute;
+    }
+
+    /**
+     * 1. Change the inconsistent appearance in all browsers (opinionated).
+     * 2. Add typography inheritance in all browsers (opinionated).
+     */
+
+    button,
+    input,
+    select,
+    textarea {
+      background-color: transparent; /* 1 */
+      border: 1px solid WindowFrame; /* 1 */
+      color: inherit; /* 1 */
+      font: inherit; /* 2 */
+      letter-spacing: inherit; /* 2 */
+      padding: 0.25em 0.375em; /* 1 */
+    }
+
+    /**
+     * Change the inconsistent appearance in all browsers (opinionated).
+     */
+
+    select {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background: no-repeat right center / 1em;
+      border-radius: 0;
+      padding-right: 1em;
+    }
+
+    /**
+     * Change the inconsistent appearance in all browsers (opinionated).
+     */
+
+    select:not([multiple]):not([size]) {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h6L7 4'/%3E%3C/svg%3E");
+    }
+
+    /**
+     * Change the inconsistent appearance in IE (opinionated).
+     */
+
+    ::-ms-expand {
+      display: none;
+    }
+
+    /**
+     * Correct the inconsistent appearance in IE (opinionated).
+     */
+
+    :-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.54);
+    }
+
+    /**
+     * Use the default user interface font in all browsers (opinionated).
+     */
+
+    html {
+      font-family:
+        system-ui,
+        /* macOS 10.11-10.12 */ -apple-system,
+        /* Windows 6+ */ "Segoe UI",
+        /* Android 4+ */ "Roboto",
+        /* Ubuntu 10.10+ */ "Ubuntu",
+        /* Gnome 3+ */ "Cantarell",
+        /* KDE Plasma 5+ */ "Noto Sans",
+        /* fallback */ sans-serif,
+        /* macOS emoji */ "Apple Color Emoji",
+        /* Windows emoji */ "Segoe UI Emoji",
+        /* Windows emoji */ "Segoe UI Symbol",
+        /* Linux emoji */ "Noto Color Emoji";
+    }
+
+    /**
+     * Use the default monospace user interface font in all browsers (opinionated).
+     */
+
+    code,
+    kbd,
+    samp,
+    pre {
+      font-family:
+        /* macOS 10.10+ */ "Menlo",
+        /* Windows 6+ */ "Consolas",
+        /* Android 4+ */ "Roboto Mono",
+        /* Ubuntu 10.10+ */ "Ubuntu Monospace",
+        /* KDE Plasma 5+ */ "Noto Mono",
+        /* KDE Plasma 4+ */ "Oxygen Mono",
+        /* Linux/OpenOffice fallback */ "Liberation Mono",
+        /* fallback */ monospace,
+        /* macOS emoji */ "Apple Color Emoji",
+        /* Windows emoji */ "Segoe UI Emoji",
+        /* Windows emoji */ "Segoe UI Symbol",
+        /* Linux emoji */ "Noto Color Emoji";
+    }
+
+    /**
+     * MAIN SITE CODING
+     */
+
+    @import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+    html, body {
+      font-family: 'Sorts Mill Goudy', serif;
+      color: #000;
+    }
+    html {
+      font-size: 24px; <!-- for rem sizing -->
+    }
+    #ad_container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+    #ad_container p {
+      margin-bottom: 1rem;
+    }
+    #ad_container span {
+      display: grid;
+      grid-template-columns: 1fr 34px 34px;
+    }
+    #ad_container span p {
+      justify-self: end;
+      padding-right: 0.5rem;
+    }
+    #ad_container span a {
+      padding-right: 1rem;
+    }
+    #ad_email, #ad_twitter {
+      fill: #D3D3D3;
+    }
+    #ad_twitter:hover, #ad_email:hover {
+      fill: #000;
+    }
+  </style>
+
+</head>
+<body class="js-loading">
+
+  <main id="ad_container">
+    <p>"Blankness, sometimes, is a website waiting to be made."</p>
+    <span>
+      <p>— Anıl Dom</p>
+      <a href="https://twitter.com/anil_dom">
+        <svg id="ad_twitter" aria-labelledby="anildom_twitter" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <title id="anildom_twitter">Twitter</title>
+          <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/>
+          Twitter
+        </svg>
+      </a>
+      <a href="mailto:anildom@protonmail.com">
+        <svg id="ad_email" aria-labelledby="anildom_email" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <title id="anildom_email">Email</title>
+          <path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/>
+          Email
+        </svg>
+      </a>
+    </span>
+  </main>
+
+  <script>
+    var links = document.links;
+    for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+      if (links[i].hostname != window.location.hostname) {
+        links[i].target = '_blank';
+      }
+    }
+  </script>
+
+  <script>
+    (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+  </script>
+
+</body>
+</html>

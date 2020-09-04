@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
@@ -20,6 +20,15 @@
 
   <link rel="stylesheet" href="css/style.css">
   <style>
+    <!-- .no-js and .js are for preventing FOUC -->
+    .no-js {
+      opacity: 0 !important;
+      visibility: hidden !important;
+    }
+    .js {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
     /* Includes obsolete and deprecated elements for older coding, at the end from acronym to xmp */
     html, body, address, article, aside, footer, header, h1, h2, h3, h4, h5, h6, hgroup, main, nav, section,
     blockquote, dd, div, dl, dt, figcaption, figure, hr, li, main, ol, p, pre, ul,
@@ -747,7 +756,7 @@
     html {
       font-size: 24px; <!-- for rem sizing -->
     }
-    #ad_container {
+    #ando_container {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -755,44 +764,44 @@
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
     }
-    #ad_container p {
+    #ando_container p {
       margin-bottom: 1rem;
     }
-    #ad_container span {
+    #ando_container span {
       display: grid;
       grid-template-columns: 1fr 34px 34px;
     }
-    #ad_container span p {
+    #ando_container span p {
       justify-self: end;
       padding-right: 0.5rem;
     }
-    #ad_container span a {
+    #ando_container span a {
       padding-right: 1rem;
     }
-    #ad_email, #ad_twitter {
+    #ando_email, #ando_twitter {
       fill: #D3D3D3;
     }
-    #ad_twitter:hover, #ad_email:hover {
+    #ando_twitter:hover, #ando_email:hover {
       fill: #000;
     }
   </style>
 
 </head>
-<body class="js-loading">
+<body>
 
-  <main id="ad_container">
+  <main id="ando_container">
     <p>"Blankness, sometimes, is a website waiting to be made."</p>
     <span>
       <p>— Anıl Dom</p>
       <a href="https://twitter.com/anil_dom">
-        <svg id="ad_twitter" aria-labelledby="anildom_twitter" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <svg id="ando_twitter" aria-labelledby="anildom_twitter" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <title id="anildom_twitter">Twitter</title>
           <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/>
           Twitter
         </svg>
       </a>
       <a href="mailto:anildom@protonmail.com">
-        <svg id="ad_email" aria-labelledby="anildom_email" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <svg id="ando_email" aria-labelledby="anildom_email" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <title id="anildom_email">Email</title>
           <path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/>
           Email
@@ -809,6 +818,10 @@
       }
     }
   </script>
-  
+
+  <script>
+    (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+  </script>
+
 </body>
 </html>
